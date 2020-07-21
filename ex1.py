@@ -1,0 +1,16 @@
+# student_grade = [9.1, 8.8, 7.5]
+d = dir(list)
+i = dir(float)
+r = dir(str)
+e = dir(int)
+
+f = open('dir_of_list', 'a')
+f.write('\n \n \n')
+f.write('The following is the print of the contents of List \n' + str(d))
+f.write('\n \n \n')
+f.write('The following is the print of the contents of Float \n' + str(i))
+f.write('\n \n \n')
+f.write('The following is the print of the contents of String \n' + str(r))
+f.write('\n \n \n')
+f.write('The following is the print of the contents of Integer \n' + str(e))
+f.close()
