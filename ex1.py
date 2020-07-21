@@ -4,7 +4,7 @@ i = dir(float)
 r = dir(str)
 e = dir(int)
 
-f = open('dir_of_list', 'a')
+f = open('dir_of_list.txt', 'a')
 f.write('\n \n \n')
 f.write('The following is the print of the contents of List \n' + str(d))
 f.write('\n \n \n')
