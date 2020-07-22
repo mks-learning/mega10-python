@@ -6,7 +6,7 @@ e = dir(int)
 c = dir(__builtins__)
 t = dir()
 
-f = open('dir_of_list.txt', 'w')
+f = open('dir_of_python_items.txt', 'w')
 f.write('\n \n \n')
 f.write('The following is the print of the contents of List: \n')
 f.write(str(d))
