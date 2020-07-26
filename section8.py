@@ -4,3 +4,8 @@
 # data structure. Once the /end is encountered. the while
 # loop is broken and the entire contents of the list is
 # printed out in capitalize format.
+
+say_somthing = []
+something = input("Say something: ")
+while something != '/end':
+    
