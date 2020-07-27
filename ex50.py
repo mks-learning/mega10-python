@@ -1,0 +1,8 @@
+myfile = open('files/data.txt', 'a+')
+myfile.seek(0)
+stuff = myfile.read()
+myfile.seek(0)
+myfile.write(stuff)
+myfile.write(stuff)
+myfile.seek(0)
+myfile.close()
