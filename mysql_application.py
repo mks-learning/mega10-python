@@ -17,8 +17,11 @@ database = 'ardit700_pm1database'
 
 
 def getanswers(word):
-    query_action: cursor.execute("SELECT * FROM Dictionary WHERE Expression = '%s'" % word)
+    query_action: cursor.execute("SELECT * FROM Dictionary WHERE Expression = \
+    '%s' " % word)
     results = cursor.fetchall()
+    # debug line below
+    print(results)
     return results
 
 
