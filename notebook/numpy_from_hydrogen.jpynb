@@ -1,0 +1,18 @@
+# %% codecell
+import numpy
+n=numpy.arange(27)
+n
+# %% codecell
+type(n)
+# %% codecell
+print(n)
+# %% codecell
+n.reshape(3,9)
+# %% codecell
+n.reshape(3,3,3)
+import cv2
+im_g=cv2.imread('smallgray.png',0)
+im_g
+im_c=cv2.imread('newsmallgray.png',0)
+im_c
+print(im_c)
