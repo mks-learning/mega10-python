@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9ec0f79158314d21b19a23a24c9aa04c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9ec0f79158314d21b19a23a24c9aa04c" ></div>
+        
+</body>
+<script>    
+    
+            var map_9ec0f79158314d21b19a23a24c9aa04c = L.map(
+                "map_9ec0f79158314d21b19a23a24c9aa04c",
+                {
+                    center: [37.4124, -122.1111],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 20,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_450af917a445420b9898374318112e51 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9ec0f79158314d21b19a23a24c9aa04c);
+        
+    
+            var feature_group_5371b3e2810d4ed38eddb12ac27f4622 = L.featureGroup(
+                {}
+            ).addTo(map_9ec0f79158314d21b19a23a24c9aa04c);
+        
+    
+            var marker_eb8f1844dc4846a1b7f2fe090df6cc54 = L.marker(
+                [48.7767982, -121.810997],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_2910a951200b4afc90d979f1db63c65a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eb8f1844dc4846a1b7f2fe090df6cc54.setIcon(icon_2910a951200b4afc90d979f1db63c65a);
+        
+    
+        var popup_c295b25388884fb6ad88ed2b85472e6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b547aab64cd4432d80bc90dbc8c63cca = $(`<div id="html_b547aab64cd4432d80bc90dbc8c63cca" style="width: 100.0%; height: 100.0%;">Baker<br>US-Washington<br>Stratovolcano</div>`)[0];
+            popup_c295b25388884fb6ad88ed2b85472e6a.setContent(html_b547aab64cd4432d80bc90dbc8c63cca);
+        
+
+        marker_eb8f1844dc4846a1b7f2fe090df6cc54.bindPopup(popup_c295b25388884fb6ad88ed2b85472e6a)
+        ;
+
+        
+    
+    
+            var marker_c6171b17d5794e19b70454986c7be48e = L.marker(
+                [48.1118011, -121.1110001],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_a79083c1da4741b39fcc1df33a66ffe1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c6171b17d5794e19b70454986c7be48e.setIcon(icon_a79083c1da4741b39fcc1df33a66ffe1);
+        
+    
+        var popup_5bd147dcdcff4e328a82abf63238e1a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c839f677df844d94af6fb5eb92df222c = $(`<div id="html_c839f677df844d94af6fb5eb92df222c" style="width: 100.0%; height: 100.0%;">Glacier Peak<br>US-Washington<br>Stratovolcano</div>`)[0];
+            popup_5bd147dcdcff4e328a82abf63238e1a2.setContent(html_c839f677df844d94af6fb5eb92df222c);
+        
+
+        marker_c6171b17d5794e19b70454986c7be48e.bindPopup(popup_5bd147dcdcff4e328a82abf63238e1a2)
+        ;
+
+        
+    
+    
+            var marker_15f5d4f50ade4672a8df2973ca2af4d9 = L.marker(
+                [46.8698006, -121.7509995],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_98d173d7fbab400f9cd3714bc92e9765 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_15f5d4f50ade4672a8df2973ca2af4d9.setIcon(icon_98d173d7fbab400f9cd3714bc92e9765);
+        
+    
+        var popup_398b04466a3f4777a32c2795953b34f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea4fec7f05724cc8bdfca3f5013afae1 = $(`<div id="html_ea4fec7f05724cc8bdfca3f5013afae1" style="width: 100.0%; height: 100.0%;">Rainier<br>US-Washington<br>Stratovolcano</div>`)[0];
+            popup_398b04466a3f4777a32c2795953b34f2.setContent(html_ea4fec7f05724cc8bdfca3f5013afae1);
+        
+
+        marker_15f5d4f50ade4672a8df2973ca2af4d9.bindPopup(popup_398b04466a3f4777a32c2795953b34f2)
+        ;
+
+        
+    
+    
+            var marker_e4205b8a6361485d80b7cfe4aa631ac0 = L.marker(
+                [46.1997986, -122.1809998],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_920be1b7be7f4dd4b9a69f2cda60e5aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e4205b8a6361485d80b7cfe4aa631ac0.setIcon(icon_920be1b7be7f4dd4b9a69f2cda60e5aa);
+        
+    
+        var popup_038b3a0fc56f44f7b3fdb5ed7bdbbfb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ec04654eebd4d028ccaeff8d6bb2fd3 = $(`<div id="html_7ec04654eebd4d028ccaeff8d6bb2fd3" style="width: 100.0%; height: 100.0%;">St. Helens<br>US-Washington<br>Stratovolcano</div>`)[0];
+            popup_038b3a0fc56f44f7b3fdb5ed7bdbbfb6.setContent(html_7ec04654eebd4d028ccaeff8d6bb2fd3);
+        
+
+        marker_e4205b8a6361485d80b7cfe4aa631ac0.bindPopup(popup_038b3a0fc56f44f7b3fdb5ed7bdbbfb6)
+        ;
+
+        
+    
+    
+            var marker_ad685c5a46c84a9b86fa47e9a49d76aa = L.marker(
+                [46.20579910000001, -121.4909973],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_8fe9b59ef3894181bf5c4d0b27397d3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ad685c5a46c84a9b86fa47e9a49d76aa.setIcon(icon_8fe9b59ef3894181bf5c4d0b27397d3c);
+        
+    
+        var popup_4b9be1a358cb4d438b34899510f62c23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47bbfa3cfd27491f9723a7512522d2e1 = $(`<div id="html_47bbfa3cfd27491f9723a7512522d2e1" style="width: 100.0%; height: 100.0%;">Adams<br>US-Washington<br>Stratovolcano</div>`)[0];
+            popup_4b9be1a358cb4d438b34899510f62c23.setContent(html_47bbfa3cfd27491f9723a7512522d2e1);
+        
+
+        marker_ad685c5a46c84a9b86fa47e9a49d76aa.bindPopup(popup_4b9be1a358cb4d438b34899510f62c23)
+        ;
+
+        
+    
+    
+            var marker_e110cba117164d2e9535ef1321cd5ca4 = L.marker(
+                [45.8797989, -122.0810013],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_4a090125467845b38b5cae6a5d2fca82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e110cba117164d2e9535ef1321cd5ca4.setIcon(icon_4a090125467845b38b5cae6a5d2fca82);
+        
+    
+        var popup_422e5885254544b884720d99500b199e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be519170b72d4c6e96f27ca8eb3331de = $(`<div id="html_be519170b72d4c6e96f27ca8eb3331de" style="width: 100.0%; height: 100.0%;">West Crater<br>US-Washington<br>Volcanic field</div>`)[0];
+            popup_422e5885254544b884720d99500b199e.setContent(html_be519170b72d4c6e96f27ca8eb3331de);
+        
+
+        marker_e110cba117164d2e9535ef1321cd5ca4.bindPopup(popup_422e5885254544b884720d99500b199e)
+        ;
+
+        
+    
+    
+            var marker_9df26500ebbf4f3095efc0938961b16e = L.marker(
+                [45.929798100000006, -121.8209991],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_0ced1604336a4913a90e033b3ae72cd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_9df26500ebbf4f3095efc0938961b16e.setIcon(icon_0ced1604336a4913a90e033b3ae72cd8);
+        
+    
+        var popup_ed425149af784aba9da04d4017105160 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_baabf53257be4a1389ff88568ab5ced5 = $(`<div id="html_baabf53257be4a1389ff88568ab5ced5" style="width: 100.0%; height: 100.0%;">Indian Heaven<br>US-Washington<br>Shield volcano</div>`)[0];
+            popup_ed425149af784aba9da04d4017105160.setContent(html_baabf53257be4a1389ff88568ab5ced5);
+        
+
+        marker_9df26500ebbf4f3095efc0938961b16e.bindPopup(popup_ed425149af784aba9da04d4017105160)
+        ;
+
+        
+    
+    
+            var marker_cec9349d96814c1980cbed5a861dcad0 = L.marker(
+                [45.3737984, -121.6910019],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_40e9fdeec3084d228bbcb5b5e9261806 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cec9349d96814c1980cbed5a861dcad0.setIcon(icon_40e9fdeec3084d228bbcb5b5e9261806);
+        
+    
+        var popup_1d2c94441e774b7ea12a7ca79ba3d5ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c615e684083c45898773fb87fbd6ea24 = $(`<div id="html_c615e684083c45898773fb87fbd6ea24" style="width: 100.0%; height: 100.0%;">Hood<br>US-Oregon<br>Stratovolcano</div>`)[0];
+            popup_1d2c94441e774b7ea12a7ca79ba3d5ea.setContent(html_c615e684083c45898773fb87fbd6ea24);
+        
+
+        marker_cec9349d96814c1980cbed5a861dcad0.bindPopup(popup_1d2c94441e774b7ea12a7ca79ba3d5ea)
+        ;
+
+        
+    
+    
+            var marker_dacf5dd4c6c64bb19a487a19d9491364 = L.marker(
+                [44.691799200000005, -121.8010025],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_4a1f6d0a275947129a913a12295c084c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dacf5dd4c6c64bb19a487a19d9491364.setIcon(icon_4a1f6d0a275947129a913a12295c084c);
+        
+    
+        var popup_3366ff2e061a453eaf16d206499ee51e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0ffa89b93674c48bf2a379178e0159f = $(`<div id="html_a0ffa89b93674c48bf2a379178e0159f" style="width: 100.0%; height: 100.0%;">Jefferson<br>US-Oregon<br>Stratovolcano</div>`)[0];
+            popup_3366ff2e061a453eaf16d206499ee51e.setContent(html_a0ffa89b93674c48bf2a379178e0159f);
+        
+
+        marker_dacf5dd4c6c64bb19a487a19d9491364.bindPopup(popup_3366ff2e061a453eaf16d206499ee51e)
+        ;
+
+        
+    
+    
+            var marker_aa8de4656ef740cc8ab855d48ff4c169 = L.marker(
+                [44.4197998, -121.7710037],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_9343ec5e887f49229d72f7bf859e1d1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_aa8de4656ef740cc8ab855d48ff4c169.setIcon(icon_9343ec5e887f49229d72f7bf859e1d1e);
+        
+    
+        var popup_35e7ff52c1294de7a2f31d41473c5fc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eacbd373d12749fbba5f02817fe5491a = $(`<div id="html_eacbd373d12749fbba5f02817fe5491a" style="width: 100.0%; height: 100.0%;">Blue Lake Crater<br>US-Oregon<br>Maar</div>`)[0];
+            popup_35e7ff52c1294de7a2f31d41473c5fc8.setContent(html_eacbd373d12749fbba5f02817fe5491a);
+        
+
+        marker_aa8de4656ef740cc8ab855d48ff4c169.bindPopup(popup_35e7ff52c1294de7a2f31d41473c5fc8)
+        ;
+
+        
+    
+    
+            var marker_c47401b2dc7a4370a9ac8dfff8c2028e = L.marker(
+                [44.3797989, -121.9309998],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_45abf3fefabb42459f55c2e30a22b370 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_c47401b2dc7a4370a9ac8dfff8c2028e.setIcon(icon_45abf3fefabb42459f55c2e30a22b370);
+        
+    
+        var popup_c2bc690c798a4aa499425f02a23e138b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1bd3e1a4605413391347c43a70cc996 = $(`<div id="html_f1bd3e1a4605413391347c43a70cc996" style="width: 100.0%; height: 100.0%;">Sand Mountain Field<br>US-Oregon<br>Cinder cone</div>`)[0];
+            popup_c2bc690c798a4aa499425f02a23e138b.setContent(html_f1bd3e1a4605413391347c43a70cc996);
+        
+
+        marker_c47401b2dc7a4370a9ac8dfff8c2028e.bindPopup(popup_c2bc690c798a4aa499425f02a23e138b)
+        ;
+
+        
+    
+    
+            var marker_6ab4bfd4fa1e4c1d93fc0cef05d02798 = L.marker(
+                [44.331798600000006, -121.8310013],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_7ded6b9a51bb422f81b583b0e56cf3a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_6ab4bfd4fa1e4c1d93fc0cef05d02798.setIcon(icon_7ded6b9a51bb422f81b583b0e56cf3a9);
+        
+    
+        var popup_f5889010bc49496481fc14be731470a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae27c25353eb4e25acc1fcd53845477f = $(`<div id="html_ae27c25353eb4e25acc1fcd53845477f" style="width: 100.0%; height: 100.0%;">Washington<br>US-Oregon<br>Shield volcano</div>`)[0];
+            popup_f5889010bc49496481fc14be731470a1.setContent(html_ae27c25353eb4e25acc1fcd53845477f);
+        
+
+        marker_6ab4bfd4fa1e4c1d93fc0cef05d02798.bindPopup(popup_f5889010bc49496481fc14be731470a1)
+        ;
+
+        
+    
+    
+            var marker_a82a377054374c27ae129d534a18c191 = L.marker(
+                [44.2848015, -121.8410034],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_ca50c885e719466899cf1daae4b6d44f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_a82a377054374c27ae129d534a18c191.setIcon(icon_ca50c885e719466899cf1daae4b6d44f);
+        
+    
+        var popup_135d69c3b49640fe8619c8222532b75a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6c9f15226ce4601a1a58cdb7425bb8b = $(`<div id="html_a6c9f15226ce4601a1a58cdb7425bb8b" style="width: 100.0%; height: 100.0%;">Belknap<br>US-Oregon<br>Shield volcano</div>`)[0];
+            popup_135d69c3b49640fe8619c8222532b75a.setContent(html_a6c9f15226ce4601a1a58cdb7425bb8b);
+        
+
+        marker_a82a377054374c27ae129d534a18c191.bindPopup(popup_135d69c3b49640fe8619c8222532b75a)
+        ;
+
+        
+    
+    
+            var marker_3090427074934dda88217f7518a3d9bc = L.marker(
+                [44.1697998, -121.7710037],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_8a2f6df780ee4c5f91a07f6d1bc636ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_3090427074934dda88217f7518a3d9bc.setIcon(icon_8a2f6df780ee4c5f91a07f6d1bc636ba);
+        
+    
+        var popup_9d554d6746d54b219be5fe5c30731631 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8226b8b0ad4418bbd58db41ed7f4ab6 = $(`<div id="html_d8226b8b0ad4418bbd58db41ed7f4ab6" style="width: 100.0%; height: 100.0%;">North Sister Field<br>US-Oregon<br>Complex volcano</div>`)[0];
+            popup_9d554d6746d54b219be5fe5c30731631.setContent(html_d8226b8b0ad4418bbd58db41ed7f4ab6);
+        
+
+        marker_3090427074934dda88217f7518a3d9bc.bindPopup(popup_9d554d6746d54b219be5fe5c30731631)
+        ;
+
+        
+    
+    
+            var marker_ead51e6143484422b259f736da8551d2 = L.marker(
+                [44.099800099999996, -121.7710037],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_4754400ab01d4655a27265e15c0b3bd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ead51e6143484422b259f736da8551d2.setIcon(icon_4754400ab01d4655a27265e15c0b3bd8);
+        
+    
+        var popup_a02cfc46631d46da93c4de8a35e99a16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9fc7943d5f74b6a87a3d93f6b6209c3 = $(`<div id="html_c9fc7943d5f74b6a87a3d93f6b6209c3" style="width: 100.0%; height: 100.0%;">South Sister<br>US-Oregon<br>Complex volcano</div>`)[0];
+            popup_a02cfc46631d46da93c4de8a35e99a16.setContent(html_c9fc7943d5f74b6a87a3d93f6b6209c3);
+        
+
+        marker_ead51e6143484422b259f736da8551d2.bindPopup(popup_a02cfc46631d46da93c4de8a35e99a16)
+        ;
+
+        
+    
+    
+            var marker_69d150e2a4e64b0980c8c6a3e8e6f047 = L.marker(
+                [43.978801700000005, -121.6809998],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_7e2c29015d6c4d4d9b8828bdf214a953 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_69d150e2a4e64b0980c8c6a3e8e6f047.setIcon(icon_7e2c29015d6c4d4d9b8828bdf214a953);
+        
+    
+        var popup_ef0aee2f8eeb4c30befbc0a56f171025 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d3c758c1bab4da29a6097f6a148012d = $(`<div id="html_5d3c758c1bab4da29a6097f6a148012d" style="width: 100.0%; height: 100.0%;">Bachelor<br>US-Oregon<br>Stratovolcano</div>`)[0];
+            popup_ef0aee2f8eeb4c30befbc0a56f171025.setContent(html_5d3c758c1bab4da29a6097f6a148012d);
+        
+
+        marker_69d150e2a4e64b0980c8c6a3e8e6f047.bindPopup(popup_ef0aee2f8eeb4c30befbc0a56f171025)
+        ;
+
+        
+    
+    
+            var marker_36042c7d26e3477f85d801b06a901060 = L.marker(
+                [43.7218018, -121.2210007],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_362a5e5c21d44b1e80cb0694ccace6d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_36042c7d26e3477f85d801b06a901060.setIcon(icon_362a5e5c21d44b1e80cb0694ccace6d3);
+        
+    
+        var popup_4b95f35d7e27487a81767024b8422bf2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bec7250d3ee4f0a883c45173fe6e0e4 = $(`<div id="html_6bec7250d3ee4f0a883c45173fe6e0e4" style="width: 100.0%; height: 100.0%;">Newberry Volcano<br>US-Oregon<br>Shield volcano</div>`)[0];
+            popup_4b95f35d7e27487a81767024b8422bf2.setContent(html_6bec7250d3ee4f0a883c45173fe6e0e4);
+        
+
+        marker_36042c7d26e3477f85d801b06a901060.bindPopup(popup_4b95f35d7e27487a81767024b8422bf2)
+        ;
+
+        
+    
+    
+            var marker_c67fa43b245d4d54bdf653e528fe1ae6 = L.marker(
+                [43.569801299999995, -121.8209991],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_8522f51b89614987a8f68160f34510a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c67fa43b245d4d54bdf653e528fe1ae6.setIcon(icon_8522f51b89614987a8f68160f34510a4);
+        
+    
+        var popup_8b56b57e001743019ea1f7b36fc9b34a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14aa4985315549a099cccd9edc76b5ae = $(`<div id="html_14aa4985315549a099cccd9edc76b5ae" style="width: 100.0%; height: 100.0%;">Davis Lake<br>US-Oregon<br>Volcanic field</div>`)[0];
+            popup_8b56b57e001743019ea1f7b36fc9b34a.setContent(html_14aa4985315549a099cccd9edc76b5ae);
+        
+
+        marker_c67fa43b245d4d54bdf653e528fe1ae6.bindPopup(popup_8b56b57e001743019ea1f7b36fc9b34a)
+        ;
+
+        
+    
+    
+            var marker_ebfcd9b5a33744779520d7a4ef4070f6 = L.marker(
+                [43.5119019, -120.8610001],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_d4432dc0f18d4ad2b610045a169d09fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ebfcd9b5a33744779520d7a4ef4070f6.setIcon(icon_d4432dc0f18d4ad2b610045a169d09fe);
+        
+    
+        var popup_62eac632f6ac4cce9e2dd097de5f63aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70c9a1f2fd024f0285c1453f3026d92f = $(`<div id="html_70c9a1f2fd024f0285c1453f3026d92f" style="width: 100.0%; height: 100.0%;">Devils Garden<br>US-Oregon<br>Volcanic field</div>`)[0];
+            popup_62eac632f6ac4cce9e2dd097de5f63aa.setContent(html_70c9a1f2fd024f0285c1453f3026d92f);
+        
+
+        marker_ebfcd9b5a33744779520d7a4ef4070f6.bindPopup(popup_62eac632f6ac4cce9e2dd097de5f63aa)
+        ;
+
+        
+    
+    
+            var marker_f9bf8bbd79304f908382d085595b2123 = L.marker(
+                [43.240798999999996, -122.10099790000001],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_0b47aa433de94814b52b3ee4a52ebfd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f9bf8bbd79304f908382d085595b2123.setIcon(icon_0b47aa433de94814b52b3ee4a52ebfd2);
+        
+    
+        var popup_4122b464a9cc48aea752ac9c2104a03f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_244562a6fa244bd8b082e0a491481c7d = $(`<div id="html_244562a6fa244bd8b082e0a491481c7d" style="width: 100.0%; height: 100.0%;">Cinnamon Butte<br>US-Oregon<br>Cinder cone</div>`)[0];
+            popup_4122b464a9cc48aea752ac9c2104a03f.setContent(html_244562a6fa244bd8b082e0a491481c7d);
+        
+
+        marker_f9bf8bbd79304f908382d085595b2123.bindPopup(popup_4122b464a9cc48aea752ac9c2104a03f)
+        ;
+
+        
+    
+    
+            var marker_ecb5e1641cc7430bbac8974e174a92b2 = L.marker(
+                [43.471900899999994, -120.7509995],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_723501cef2804ce0a830f38608f1970c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ecb5e1641cc7430bbac8974e174a92b2.setIcon(icon_723501cef2804ce0a830f38608f1970c);
+        
+    
+        var popup_9361a1a71ea140ed8a216da76631c2c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32d970c57d0147aa833be0d1dddacdf9 = $(`<div id="html_32d970c57d0147aa833be0d1dddacdf9" style="width: 100.0%; height: 100.0%;">Squaw Ridge Lava Field<br>US-Oregon<br>Volcanic field</div>`)[0];
+            popup_9361a1a71ea140ed8a216da76631c2c9.setContent(html_32d970c57d0147aa833be0d1dddacdf9);
+        
+
+        marker_ecb5e1641cc7430bbac8974e174a92b2.bindPopup(popup_9361a1a71ea140ed8a216da76631c2c9)
+        ;
+
+        
+    
+    
+            var marker_795bcc3ad3014e85a55a8af6fc65fa4d = L.marker(
+                [43.3609009, -120.6610031],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_58e44cf7703e44158298aa48f6c09ee2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_795bcc3ad3014e85a55a8af6fc65fa4d.setIcon(icon_58e44cf7703e44158298aa48f6c09ee2);
+        
+    
+        var popup_2e63391629834b6b88f00fb73b8ece9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79d4a1df3c23466a81ac736568a3f311 = $(`<div id="html_79d4a1df3c23466a81ac736568a3f311" style="width: 100.0%; height: 100.0%;">Four Craters Lava Field<br>US-Oregon<br>Volcanic field</div>`)[0];
+            popup_2e63391629834b6b88f00fb73b8ece9f.setContent(html_79d4a1df3c23466a81ac736568a3f311);
+        
+
+        marker_795bcc3ad3014e85a55a8af6fc65fa4d.bindPopup(popup_2e63391629834b6b88f00fb73b8ece9f)
+        ;
+
+        
+    
+    
+            var marker_c00df56c762b427cb0a3f9c15cfc56d1 = L.marker(
+                [42.9299011, -122.1210022],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_ab750637976241628f3a42c1aca02991 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_c00df56c762b427cb0a3f9c15cfc56d1.setIcon(icon_ab750637976241628f3a42c1aca02991);
+        
+    
+        var popup_7a35614448ed42968c9fd84ee7c83e80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c387d090b33144f283ec4e4b3825b8eb = $(`<div id="html_c387d090b33144f283ec4e4b3825b8eb" style="width: 100.0%; height: 100.0%;">Crater Lake<br>US-Oregon<br>Caldera</div>`)[0];
+            popup_7a35614448ed42968c9fd84ee7c83e80.setContent(html_c387d090b33144f283ec4e4b3825b8eb);
+        
+
+        marker_c00df56c762b427cb0a3f9c15cfc56d1.bindPopup(popup_7a35614448ed42968c9fd84ee7c83e80)
+        ;
+
+        
+    
+    
+            var marker_e0b0aa8fe4644492a05f0f13b3a61ada = L.marker(
+                [44.4299011, -110.6709976],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_60ca8df9195d4faca855ad6879be5ae0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_e0b0aa8fe4644492a05f0f13b3a61ada.setIcon(icon_60ca8df9195d4faca855ad6879be5ae0);
+        
+    
+        var popup_4d85b63af03046cf8e8c8d974851c98d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ecfb12e2be44c85bbccca7795686847 = $(`<div id="html_1ecfb12e2be44c85bbccca7795686847" style="width: 100.0%; height: 100.0%;">Yellowstone<br>US-Wyoming<br>Caldera</div>`)[0];
+            popup_4d85b63af03046cf8e8c8d974851c98d.setContent(html_1ecfb12e2be44c85bbccca7795686847);
+        
+
+        marker_e0b0aa8fe4644492a05f0f13b3a61ada.bindPopup(popup_4d85b63af03046cf8e8c8d974851c98d)
+        ;
+
+        
+    
+    
+            var marker_2649eec9ace343eb986e135dc93710c5 = L.marker(
+                [43.0998993, -118.7509995],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_e4e667dbe1ba425394d7d78522666a56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2649eec9ace343eb986e135dc93710c5.setIcon(icon_e4e667dbe1ba425394d7d78522666a56);
+        
+    
+        var popup_3d4316752e3d4ddbb112dc277effcdf0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ff45a4123a3482295437b502ae5f849 = $(`<div id="html_4ff45a4123a3482295437b502ae5f849" style="width: 100.0%; height: 100.0%;">Diamond Craters<br>US-Oregon<br>Volcanic field</div>`)[0];
+            popup_3d4316752e3d4ddbb112dc277effcdf0.setContent(html_4ff45a4123a3482295437b502ae5f849);
+        
+
+        marker_2649eec9ace343eb986e135dc93710c5.bindPopup(popup_3d4316752e3d4ddbb112dc277effcdf0)
+        ;
+
+        
+    
+    
+            var marker_06b277888b304798b3335a98b9d12da6 = L.marker(
+                [43.1498985, -117.4710007],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_b7326fd4dd1c449d9caa62787e760e57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_06b277888b304798b3335a98b9d12da6.setIcon(icon_b7326fd4dd1c449d9caa62787e760e57);
+        
+    
+        var popup_acda9e2dde034c94a3c8bf636263da9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_877030dc6fd8466290ce52ffbb3aa156 = $(`<div id="html_877030dc6fd8466290ce52ffbb3aa156" style="width: 100.0%; height: 100.0%;">Jordan Craters<br>US-Oregon<br>Volcanic field</div>`)[0];
+            popup_acda9e2dde034c94a3c8bf636263da9f.setContent(html_877030dc6fd8466290ce52ffbb3aa156);
+        
+
+        marker_06b277888b304798b3335a98b9d12da6.bindPopup(popup_acda9e2dde034c94a3c8bf636263da9f)
+        ;
+
+        
+    
+    
+            var marker_3d262e89336848e4af99db03f6ac4ac1 = L.marker(
+                [42.9999008, -117.8010025],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_c1c26c4a1f8640d098ebd4707a5cc3db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3d262e89336848e4af99db03f6ac4ac1.setIcon(icon_c1c26c4a1f8640d098ebd4707a5cc3db);
+        
+    
+        var popup_df2edaf9155b47bba1fcd94feeae9986 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b9a8235de4c4cbd9a207749a17968ec = $(`<div id="html_3b9a8235de4c4cbd9a207749a17968ec" style="width: 100.0%; height: 100.0%;">Saddle Butte<br>US-Oregon<br>Volcanic field</div>`)[0];
+            popup_df2edaf9155b47bba1fcd94feeae9986.setContent(html_3b9a8235de4c4cbd9a207749a17968ec);
+        
+
+        marker_3d262e89336848e4af99db03f6ac4ac1.bindPopup(popup_df2edaf9155b47bba1fcd94feeae9986)
+        ;
+
+        
+    
+    
+            var marker_4ea154ae04fa4669bd32ad6a8d8c7d4e = L.marker(
+                [43.419899, -113.5009995],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_87b015a6040d469b8ad4635895d6f99a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_4ea154ae04fa4669bd32ad6a8d8c7d4e.setIcon(icon_87b015a6040d469b8ad4635895d6f99a);
+        
+    
+        var popup_533f2d7681bc44199b938ce728039345 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d2eabefed614a26ab9a0e142e74dcfd = $(`<div id="html_2d2eabefed614a26ab9a0e142e74dcfd" style="width: 100.0%; height: 100.0%;">Craters of the Moon<br>US-Idaho<br>Cinder cone</div>`)[0];
+            popup_533f2d7681bc44199b938ce728039345.setContent(html_2d2eabefed614a26ab9a0e142e74dcfd);
+        
+
+        marker_4ea154ae04fa4669bd32ad6a8d8c7d4e.bindPopup(popup_533f2d7681bc44199b938ce728039345)
+        ;
+
+        
+    
+    
+            var marker_c6a91b9730ae42b1bebc2dd011aab16f = L.marker(
+                [43.4999008, -112.45099640000001],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_a95c81a699754e8291387d11172877c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_c6a91b9730ae42b1bebc2dd011aab16f.setIcon(icon_a95c81a699754e8291387d11172877c5);
+        
+    
+        var popup_71e8e98a9fad4309a88021d1d1654d11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7248288d5aad47c4b78837c1a9587f55 = $(`<div id="html_7248288d5aad47c4b78837c1a9587f55" style="width: 100.0%; height: 100.0%;">Hell Half Acre<br>US-Idaho<br>Shield volcano</div>`)[0];
+            popup_71e8e98a9fad4309a88021d1d1654d11.setContent(html_7248288d5aad47c4b78837c1a9587f55);
+        
+
+        marker_c6a91b9730ae42b1bebc2dd011aab16f.bindPopup(popup_71e8e98a9fad4309a88021d1d1654d11)
+        ;
+
+        
+    
+    
+            var marker_6aa7b4bb103d45dcbaefc8900bb511a0 = L.marker(
+                [43.1799011, -114.35099790000001],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_b97ce3ab8b804f14989c0bde70970ef9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_6aa7b4bb103d45dcbaefc8900bb511a0.setIcon(icon_b97ce3ab8b804f14989c0bde70970ef9);
+        
+    
+        var popup_091cfd7cb02946e58871ff1f6b328d5c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c60558d318b476bad70a99284a05a77 = $(`<div id="html_2c60558d318b476bad70a99284a05a77" style="width: 100.0%; height: 100.0%;">Shoshone Lava Field<br>US-Idaho<br>Shield volcano</div>`)[0];
+            popup_091cfd7cb02946e58871ff1f6b328d5c.setContent(html_2c60558d318b476bad70a99284a05a77);
+        
+
+        marker_6aa7b4bb103d45dcbaefc8900bb511a0.bindPopup(popup_091cfd7cb02946e58871ff1f6b328d5c)
+        ;
+
+        
+    
+    
+            var marker_dd7d6e03b07e401fb04fc97ec41ae396 = L.marker(
+                [42.605899799999996, -117.5810013],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_84615c4c2cdd45daa38d37af72d4a5ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_dd7d6e03b07e401fb04fc97ec41ae396.setIcon(icon_84615c4c2cdd45daa38d37af72d4a5ca);
+        
+    
+        var popup_cd26fbb90cfc44b08bc8f12105ca93d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26e7f7a0a25546fca3cdf60e07c68159 = $(`<div id="html_26e7f7a0a25546fca3cdf60e07c68159" style="width: 100.0%; height: 100.0%;">Jackies Butte<br>US-Oregon<br>Volcanic field</div>`)[0];
+            popup_cd26fbb90cfc44b08bc8f12105ca93d4.setContent(html_26e7f7a0a25546fca3cdf60e07c68159);
+        
+
+        marker_dd7d6e03b07e401fb04fc97ec41ae396.bindPopup(popup_cd26fbb90cfc44b08bc8f12105ca93d4)
+        ;
+
+        
+    
+    
+            var marker_f7f01fc2540941db870b88a036c7d65d = L.marker(
+                [41.579898799999995, -121.5709991],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_ec7e94be2c124b6985a2d7b66b1dcee0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_f7f01fc2540941db870b88a036c7d65d.setIcon(icon_ec7e94be2c124b6985a2d7b66b1dcee0);
+        
+    
+        var popup_45e10c73f9ea498a92d9330fcc55bb92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af9df738132f458bb7c6ed51f7011545 = $(`<div id="html_af9df738132f458bb7c6ed51f7011545" style="width: 100.0%; height: 100.0%;">Medicine Lake<br>US-California<br>Shield volcano</div>`)[0];
+            popup_45e10c73f9ea498a92d9330fcc55bb92.setContent(html_af9df738132f458bb7c6ed51f7011545);
+        
+
+        marker_f7f01fc2540941db870b88a036c7d65d.bindPopup(popup_45e10c73f9ea498a92d9330fcc55bb92)
+        ;
+
+        
+    
+    
+            var marker_4c0c6add49964008bbe7d620b63825d3 = L.marker(
+                [42.8799019, -113.2210007],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_438d7a833ea7430fa045629b7d504f98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_4c0c6add49964008bbe7d620b63825d3.setIcon(icon_438d7a833ea7430fa045629b7d504f98);
+        
+    
+        var popup_85d69b51c24a4ac282af0a6b2ed3081e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8681ce2ef523457ba62c3b80c7ca5e4f = $(`<div id="html_8681ce2ef523457ba62c3b80c7ca5e4f" style="width: 100.0%; height: 100.0%;">Wapi Lava Field<br>US-Idaho<br>Shield volcano</div>`)[0];
+            popup_85d69b51c24a4ac282af0a6b2ed3081e.setContent(html_8681ce2ef523457ba62c3b80c7ca5e4f);
+        
+
+        marker_4c0c6add49964008bbe7d620b63825d3.bindPopup(popup_85d69b51c24a4ac282af0a6b2ed3081e)
+        ;
+
+        
+    
+    
+            var marker_75a49063d9da4022894c44b4addc54ad = L.marker(
+                [41.419899, -122.20099640000001],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_01f40420b5234ad7896ef921f04332d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_75a49063d9da4022894c44b4addc54ad.setIcon(icon_01f40420b5234ad7896ef921f04332d5);
+        
+    
+        var popup_912e4a20c157462cb284099a2ebb142e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4760d35dca854ba8ba1fddf097914c04 = $(`<div id="html_4760d35dca854ba8ba1fddf097914c04" style="width: 100.0%; height: 100.0%;">Shasta<br>US-California<br>Stratovolcano</div>`)[0];
+            popup_912e4a20c157462cb284099a2ebb142e.setContent(html_4760d35dca854ba8ba1fddf097914c04);
+        
+
+        marker_75a49063d9da4022894c44b4addc54ad.bindPopup(popup_912e4a20c157462cb284099a2ebb142e)
+        ;
+
+        
+    
+    
+            var marker_6dd0cec8b5d44268b7a369bc22216d71 = L.marker(
+                [41.1778984, -121.4410019],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_982883b6798c44ff8a0c3f71854591c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_6dd0cec8b5d44268b7a369bc22216d71.setIcon(icon_982883b6798c44ff8a0c3f71854591c1);
+        
+    
+        var popup_40106119e3e44485a74d4dc6c817e010 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_837ead44b79c4ebf8666703385ec15ca = $(`<div id="html_837ead44b79c4ebf8666703385ec15ca" style="width: 100.0%; height: 100.0%;">Brushy Butte<br>US-California<br>Shield volcano</div>`)[0];
+            popup_40106119e3e44485a74d4dc6c817e010.setContent(html_837ead44b79c4ebf8666703385ec15ca);
+        
+
+        marker_6dd0cec8b5d44268b7a369bc22216d71.bindPopup(popup_40106119e3e44485a74d4dc6c817e010)
+        ;
+
+        
+    
+    
+            var marker_d2e7cf3918844713bb31dbce7db14f5d = L.marker(
+                [40.954898799999995, -121.3610001],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_815fd1ffce09487293fbf8b469652f1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_d2e7cf3918844713bb31dbce7db14f5d.setIcon(icon_815fd1ffce09487293fbf8b469652f1e);
+        
+    
+        var popup_1cd5296086ae448ea304ee148b60529f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_300b166fd0c94cbcb2c0349043ca8c47 = $(`<div id="html_300b166fd0c94cbcb2c0349043ca8c47" style="width: 100.0%; height: 100.0%;">Big Cave<br>US-California<br>Shield volcano</div>`)[0];
+            popup_1cd5296086ae448ea304ee148b60529f.setContent(html_300b166fd0c94cbcb2c0349043ca8c47);
+        
+
+        marker_d2e7cf3918844713bb31dbce7db14f5d.bindPopup(popup_1cd5296086ae448ea304ee148b60529f)
+        ;
+
+        
+    
+    
+            var marker_d9dd3f3c1ce24e1a907fb0666af1fbe3 = L.marker(
+                [40.77989960000001, -121.60099790000001],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_a9e49c54620543c696ff4c0995ac01ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_d9dd3f3c1ce24e1a907fb0666af1fbe3.setIcon(icon_a9e49c54620543c696ff4c0995ac01ca);
+        
+    
+        var popup_e25c9a6f73f3428caba254678c323509 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7ab5d3b221e472f8c10eb8a12d1c0b3 = $(`<div id="html_f7ab5d3b221e472f8c10eb8a12d1c0b3" style="width: 100.0%; height: 100.0%;">Twin Buttes<br>US-California<br>Cinder cone</div>`)[0];
+            popup_e25c9a6f73f3428caba254678c323509.setContent(html_f7ab5d3b221e472f8c10eb8a12d1c0b3);
+        
+
+        marker_d9dd3f3c1ce24e1a907fb0666af1fbe3.bindPopup(popup_e25c9a6f73f3428caba254678c323509)
+        ;
+
+        
+    
+    
+            var marker_307ec761d49940c1811d4fc9511855d5 = L.marker(
+                [40.6799011, -121.5510025],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_76a4359b9f2e4f7abeb079bc80a9c1e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_307ec761d49940c1811d4fc9511855d5.setIcon(icon_76a4359b9f2e4f7abeb079bc80a9c1e4);
+        
+    
+        var popup_780042ed8ec245639f70c7e43caf62e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecd0feb1382245d29d8b5a264e4ba302 = $(`<div id="html_ecd0feb1382245d29d8b5a264e4ba302" style="width: 100.0%; height: 100.0%;">Tumble Buttes<br>US-California<br>Cinder cone</div>`)[0];
+            popup_780042ed8ec245639f70c7e43caf62e2.setContent(html_ecd0feb1382245d29d8b5a264e4ba302);
+        
+
+        marker_307ec761d49940c1811d4fc9511855d5.bindPopup(popup_780042ed8ec245639f70c7e43caf62e2)
+        ;
+
+        
+    
+    
+            var marker_66acb92809dd4872a1431f309f0988e9 = L.marker(
+                [40.6299019, -120.8310013],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_4efcd4f2cbce41949c6f60c9a2173489 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_66acb92809dd4872a1431f309f0988e9.setIcon(icon_4efcd4f2cbce41949c6f60c9a2173489);
+        
+    
+        var popup_c5442662ff3043848de58369ef6a392a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0086ad8a55c74ad092ae93fd43bf9a67 = $(`<div id="html_0086ad8a55c74ad092ae93fd43bf9a67" style="width: 100.0%; height: 100.0%;">Eagle Lake Field<br>US-California<br>Fissure vents</div>`)[0];
+            popup_c5442662ff3043848de58369ef6a392a.setContent(html_0086ad8a55c74ad092ae93fd43bf9a67);
+        
+
+        marker_66acb92809dd4872a1431f309f0988e9.bindPopup(popup_c5442662ff3043848de58369ef6a392a)
+        ;
+
+        
+    
+    
+            var marker_99ec7bae48284325a04d7c987f2150ab = L.marker(
+                [40.491901399999996, -121.5009995],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_bbcdb1af67a64b0db71338b48599a48a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_99ec7bae48284325a04d7c987f2150ab.setIcon(icon_bbcdb1af67a64b0db71338b48599a48a);
+        
+    
+        var popup_de19195785f14ca7ae2c9cd6e4052436 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8710c0cd1dbb43488efe0a36afbd45c3 = $(`<div id="html_8710c0cd1dbb43488efe0a36afbd45c3" style="width: 100.0%; height: 100.0%;">Lassen Volc Center<br>US-California<br>Stratovolcano</div>`)[0];
+            popup_de19195785f14ca7ae2c9cd6e4052436.setContent(html_8710c0cd1dbb43488efe0a36afbd45c3);
+        
+
+        marker_99ec7bae48284325a04d7c987f2150ab.bindPopup(popup_de19195785f14ca7ae2c9cd6e4052436)
+        ;
+
+        
+    
+    
+            var marker_731473e8d88e45a9b0c4cb08128a3168 = L.marker(
+                [38.9698982, -122.7710037],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_f07025aebdf3416c97a007c2e50b5cef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_731473e8d88e45a9b0c4cb08128a3168.setIcon(icon_f07025aebdf3416c97a007c2e50b5cef);
+        
+    
+        var popup_4ea6a8caf7f74a29820229dada00cbca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7d239308c6349dda0041dee675d4be9 = $(`<div id="html_a7d239308c6349dda0041dee675d4be9" style="width: 100.0%; height: 100.0%;">Clear Lake<br>US-California<br>Volcanic field</div>`)[0];
+            popup_4ea6a8caf7f74a29820229dada00cbca.setContent(html_a7d239308c6349dda0041dee675d4be9);
+        
+
+        marker_731473e8d88e45a9b0c4cb08128a3168.bindPopup(popup_4ea6a8caf7f74a29820229dada00cbca)
+        ;
+
+        
+    
+    
+            var marker_d994cf148c01471ca4f3038a0e666a8b = L.marker(
+                [39.3749008, -119.7210007],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_95056e6b8a0d4d9ca76b305d798c3708 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d994cf148c01471ca4f3038a0e666a8b.setIcon(icon_95056e6b8a0d4d9ca76b305d798c3708);
+        
+    
+        var popup_8817b85c126c44a1b727d95cf38fa3f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55a4d24671bc41878dd127a3d3913d15 = $(`<div id="html_55a4d24671bc41878dd127a3d3913d15" style="width: 100.0%; height: 100.0%;">Steamboat Springs<br>US-Nevada<br>Lava domes</div>`)[0];
+            popup_8817b85c126c44a1b727d95cf38fa3f4.setContent(html_55a4d24671bc41878dd127a3d3913d15);
+        
+
+        marker_d994cf148c01471ca4f3038a0e666a8b.bindPopup(popup_8817b85c126c44a1b727d95cf38fa3f4)
+        ;
+
+        
+    
+    
+            var marker_ea879d9f259f477eb605f15ad84c1416 = L.marker(
+                [39.6500015, -107.03099820000001],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_4f5990451d4d48728c28402009d0abb9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_ea879d9f259f477eb605f15ad84c1416.setIcon(icon_4f5990451d4d48728c28402009d0abb9);
+        
+    
+        var popup_03618d9560d349568c3ed69673403a8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cf6080e9fde4c92ac3930a994b41b0f = $(`<div id="html_2cf6080e9fde4c92ac3930a994b41b0f" style="width: 100.0%; height: 100.0%;">Dotsero<br>US-Colorado<br>Maar</div>`)[0];
+            popup_03618d9560d349568c3ed69673403a8a.setContent(html_2cf6080e9fde4c92ac3930a994b41b0f);
+        
+
+        marker_ea879d9f259f477eb605f15ad84c1416.bindPopup(popup_03618d9560d349568c3ed69673403a8a)
+        ;
+
+        
+    
+    
+            var marker_7a2ff80c0c5c4408a0979f122cce4269 = L.marker(
+                [37.9999008, -119.03099820000001],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_adb890d12ce64b748509fbde4aded7b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_7a2ff80c0c5c4408a0979f122cce4269.setIcon(icon_adb890d12ce64b748509fbde4aded7b4);
+        
+    
+        var popup_3e71aee9bd4743ba98e57e3d83c5fa99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfc6ff20953b43a1b23e952618539e76 = $(`<div id="html_cfc6ff20953b43a1b23e952618539e76" style="width: 100.0%; height: 100.0%;">Mono Lake Volc Field<br>US-California<br>Cinder cone</div>`)[0];
+            popup_3e71aee9bd4743ba98e57e3d83c5fa99.setContent(html_cfc6ff20953b43a1b23e952618539e76);
+        
+
+        marker_7a2ff80c0c5c4408a0979f122cce4269.bindPopup(popup_3e71aee9bd4743ba98e57e3d83c5fa99)
+        ;
+
+        
+    
+    
+            var marker_76c92526e3b24e18a0f4c445fe65c2e9 = L.marker(
+                [38.970001200000006, -112.5009995],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_019cd39d1a97419598fb59d659d740d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_76c92526e3b24e18a0f4c445fe65c2e9.setIcon(icon_019cd39d1a97419598fb59d659d740d0);
+        
+    
+        var popup_1d9d9290f63c4ad7b1879b06ae164465 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a7bfd915e3b4c1c96872aea60a1fbfa = $(`<div id="html_1a7bfd915e3b4c1c96872aea60a1fbfa" style="width: 100.0%; height: 100.0%;">Black Rock Desert<br>US-Utah<br>Volcanic field</div>`)[0];
+            popup_1d9d9290f63c4ad7b1879b06ae164465.setContent(html_1a7bfd915e3b4c1c96872aea60a1fbfa);
+        
+
+        marker_76c92526e3b24e18a0f4c445fe65c2e9.bindPopup(popup_1d9d9290f63c4ad7b1879b06ae164465)
+        ;
+
+        
+    
+    
+            var marker_b6753153d2834da9978b4f28e2810cda = L.marker(
+                [37.8799019, -119.0009995],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_a141878bf9154fbf9e1a08e705988233 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b6753153d2834da9978b4f28e2810cda.setIcon(icon_a141878bf9154fbf9e1a08e705988233);
+        
+    
+        var popup_9d6f1f1b7e4043ad875321c6d31093e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79c98ce6ccf9470db6820c8315ae82ca = $(`<div id="html_79c98ce6ccf9470db6820c8315ae82ca" style="width: 100.0%; height: 100.0%;">Mono Craters<br>US-California<br>Lava domes</div>`)[0];
+            popup_9d6f1f1b7e4043ad875321c6d31093e4.setContent(html_79c98ce6ccf9470db6820c8315ae82ca);
+        
+
+        marker_b6753153d2834da9978b4f28e2810cda.bindPopup(popup_9d6f1f1b7e4043ad875321c6d31093e4)
+        ;
+
+        
+    
+    
+            var marker_9caf89552f0146b68d48eb38dc6761b5 = L.marker(
+                [37.6918983, -119.0210037],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_0e1a1abc6c794ddda37ee364a6586da7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9caf89552f0146b68d48eb38dc6761b5.setIcon(icon_0e1a1abc6c794ddda37ee364a6586da7);
+        
+    
+        var popup_90c8982e0cdc42ca9908ae4f076454fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc71aa71f9764bdf872cd2d1d5df3bbc = $(`<div id="html_bc71aa71f9764bdf872cd2d1d5df3bbc" style="width: 100.0%; height: 100.0%;">Inyo Craters<br>US-California<br>Lava domes</div>`)[0];
+            popup_90c8982e0cdc42ca9908ae4f076454fe.setContent(html_bc71aa71f9764bdf872cd2d1d5df3bbc);
+        
+
+        marker_9caf89552f0146b68d48eb38dc6761b5.bindPopup(popup_90c8982e0cdc42ca9908ae4f076454fe)
+        ;
+
+        
+    
+    
+            var marker_23b3d03cad0c48419383b494af265bec = L.marker(
+                [37.6999016, -118.8710022],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_7b9a68fdba434668bc8faa20c10b7586 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_23b3d03cad0c48419383b494af265bec.setIcon(icon_7b9a68fdba434668bc8faa20c10b7586);
+        
+    
+        var popup_051b4fc4bdb34f74b9ed8bf77d414386 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5209d57cbeb146eb8f22f7648abd97b5 = $(`<div id="html_5209d57cbeb146eb8f22f7648abd97b5" style="width: 100.0%; height: 100.0%;">Long Valley<br>US-California<br>Caldera</div>`)[0];
+            popup_051b4fc4bdb34f74b9ed8bf77d414386.setContent(html_5209d57cbeb146eb8f22f7648abd97b5);
+        
+
+        marker_23b3d03cad0c48419383b494af265bec.bindPopup(popup_051b4fc4bdb34f74b9ed8bf77d414386)
+        ;
+
+        
+    
+    
+            var marker_611e2fed914f4a15b5ed8ed61de26540 = L.marker(
+                [37.579898799999995, -119.0510025],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_365d37224306490f95e1a4a5dd159d85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_611e2fed914f4a15b5ed8ed61de26540.setIcon(icon_365d37224306490f95e1a4a5dd159d85);
+        
+    
+        var popup_b941ffc5c3f74c9c84893cfa9c8fa1f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf12068ceff84347b5b93303e40e565a = $(`<div id="html_cf12068ceff84347b5b93303e40e565a" style="width: 100.0%; height: 100.0%;">Red Cones<br>US-California<br>Cinder cone</div>`)[0];
+            popup_b941ffc5c3f74c9c84893cfa9c8fa1f4.setContent(html_cf12068ceff84347b5b93303e40e565a);
+        
+
+        marker_611e2fed914f4a15b5ed8ed61de26540.bindPopup(popup_b941ffc5c3f74c9c84893cfa9c8fa1f4)
+        ;
+
+        
+    
+    
+            var marker_7a5b72075c9b4b8a8eb46862b665e358 = L.marker(
+                [37.0199013, -117.45099640000001],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_71c9499b618a4a37b5abca8d56c39e77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_7a5b72075c9b4b8a8eb46862b665e358.setIcon(icon_71c9499b618a4a37b5abca8d56c39e77);
+        
+    
+        var popup_01fcef99036044ce8b47e435f5e9e298 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b9556cfaed549e5bc45e8c925b99fae = $(`<div id="html_0b9556cfaed549e5bc45e8c925b99fae" style="width: 100.0%; height: 100.0%;">Ubehebe Craters<br>US-California<br>Maar</div>`)[0];
+            popup_01fcef99036044ce8b47e435f5e9e298.setContent(html_0b9556cfaed549e5bc45e8c925b99fae);
+        
+
+        marker_7a5b72075c9b4b8a8eb46862b665e358.bindPopup(popup_01fcef99036044ce8b47e435f5e9e298)
+        ;
+
+        
+    
+    
+            var marker_710e75d75be34f999d36036c334b5b41 = L.marker(
+                [37.5800018, -112.6709976],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_aeaee364893a4281b5b6b5b05e9514ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_710e75d75be34f999d36036c334b5b41.setIcon(icon_aeaee364893a4281b5b6b5b05e9514ae);
+        
+    
+        var popup_4bb5b9ff1a46451b958b666f278d2acb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab055806501e48329f630df61663e1a4 = $(`<div id="html_ab055806501e48329f630df61663e1a4" style="width: 100.0%; height: 100.0%;">Markagunt Plateau<br>US-Utah<br>Volcanic field</div>`)[0];
+            popup_4bb5b9ff1a46451b958b666f278d2acb.setContent(html_ab055806501e48329f630df61663e1a4);
+        
+
+        marker_710e75d75be34f999d36036c334b5b41.bindPopup(popup_4bb5b9ff1a46451b958b666f278d2acb)
+        ;
+
+        
+    
+    
+            var marker_3e375a8e581f4a3f855464b86c652c1f = L.marker(
+                [37.257, -113.6210022],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_50c1ca6b6614424795f0d6289165affa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3e375a8e581f4a3f855464b86c652c1f.setIcon(icon_50c1ca6b6614424795f0d6289165affa);
+        
+    
+        var popup_6737e0f5e0694feb92de06d548e48473 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4aed39e04a354326811b683d0a763857 = $(`<div id="html_4aed39e04a354326811b683d0a763857" style="width: 100.0%; height: 100.0%;">Santa Clara<br>US-Utah<br>Volcanic field</div>`)[0];
+            popup_6737e0f5e0694feb92de06d548e48473.setContent(html_4aed39e04a354326811b683d0a763857);
+        
+
+        marker_3e375a8e581f4a3f855464b86c652c1f.bindPopup(popup_6737e0f5e0694feb92de06d548e48473)
+        ;
+
+        
+    
+    
+            var marker_0af042c116e04ab188b084e07f38a086 = L.marker(
+                [37.32799910000001, -112.40100100000001],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_1e3fcd33a99c4ab48f66b4ebc3f490ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_0af042c116e04ab188b084e07f38a086.setIcon(icon_1e3fcd33a99c4ab48f66b4ebc3f490ce);
+        
+    
+        var popup_e65fd29fe3fc46d89c8a79586a744a16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e12293165af043009c1610cd1de8dcae = $(`<div id="html_e12293165af043009c1610cd1de8dcae" style="width: 100.0%; height: 100.0%;">Bald Knoll<br>US-Utah<br>Cinder cone</div>`)[0];
+            popup_e65fd29fe3fc46d89c8a79586a744a16.setContent(html_e12293165af043009c1610cd1de8dcae);
+        
+
+        marker_0af042c116e04ab188b084e07f38a086.bindPopup(popup_e65fd29fe3fc46d89c8a79586a744a16)
+        ;
+
+        
+    
+    
+            var marker_2271a385db314d24ba450614ff828b78 = L.marker(
+                [36.3578987, -118.3209991],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_0c38f6f36cf1436da5ebf81866adcf82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2271a385db314d24ba450614ff828b78.setIcon(icon_0c38f6f36cf1436da5ebf81866adcf82);
+        
+    
+        var popup_dc3f53b5311e459981223afdd8378d8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed829db7ff904ed2b57981796bd9474d = $(`<div id="html_ed829db7ff904ed2b57981796bd9474d" style="width: 100.0%; height: 100.0%;">Golden Trout Creek<br>US-California<br>Volcanic field</div>`)[0];
+            popup_dc3f53b5311e459981223afdd8378d8a.setContent(html_ed829db7ff904ed2b57981796bd9474d);
+        
+
+        marker_2271a385db314d24ba450614ff828b78.bindPopup(popup_dc3f53b5311e459981223afdd8378d8a)
+        ;
+
+        
+    
+    
+            var marker_201415cb2a4f49aca51793ff483bd767 = L.marker(
+                [36.02989960000001, -117.8209991],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_468d02f6e9ce48cea46bdc4436bbbf40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_201415cb2a4f49aca51793ff483bd767.setIcon(icon_468d02f6e9ce48cea46bdc4436bbbf40);
+        
+    
+        var popup_ab633419c3914c6e90aaad2387634c6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b121391fd564622a2960391fe0406c9 = $(`<div id="html_9b121391fd564622a2960391fe0406c9" style="width: 100.0%; height: 100.0%;">Coso Volc Field<br>US-California<br>Lava domes</div>`)[0];
+            popup_ab633419c3914c6e90aaad2387634c6d.setContent(html_9b121391fd564622a2960391fe0406c9);
+        
+
+        marker_201415cb2a4f49aca51793ff483bd767.bindPopup(popup_ab633419c3914c6e90aaad2387634c6d)
+        ;
+
+        
+    
+    
+            var marker_dc3cbfcbdc8f40619d6937ddcd564400 = L.marker(
+                [36.3800011, -113.1309967],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_1760e243a605416290090636b9ac3a9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_dc3cbfcbdc8f40619d6937ddcd564400.setIcon(icon_1760e243a605416290090636b9ac3a9d);
+        
+    
+        var popup_eda7e3e543184d55a161973d8a619516 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07a18f96a35d4b85990af2078e2b40c7 = $(`<div id="html_07a18f96a35d4b85990af2078e2b40c7" style="width: 100.0%; height: 100.0%;">Uinkaret Field<br>US-Arizona<br>Volcanic field</div>`)[0];
+            popup_eda7e3e543184d55a161973d8a619516.setContent(html_07a18f96a35d4b85990af2078e2b40c7);
+        
+
+        marker_dc3cbfcbdc8f40619d6937ddcd564400.bindPopup(popup_eda7e3e543184d55a161973d8a619516)
+        ;
+
+        
+    
+    
+            var marker_98f3a8a46d3445eb9498420c47f8c271 = L.marker(
+                [34.75, -116.6210022],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_797516e344154358afeaf507fb17ba1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_98f3a8a46d3445eb9498420c47f8c271.setIcon(icon_797516e344154358afeaf507fb17ba1c);
+        
+    
+        var popup_a909d921fa5945d09c3cacadd02b0a2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_188f2afcbc504e8eae6ab50c98eb14c5 = $(`<div id="html_188f2afcbc504e8eae6ab50c98eb14c5" style="width: 100.0%; height: 100.0%;">Lavic Lake<br>US-California<br>Volcanic field</div>`)[0];
+            popup_a909d921fa5945d09c3cacadd02b0a2f.setContent(html_188f2afcbc504e8eae6ab50c98eb14c5);
+        
+
+        marker_98f3a8a46d3445eb9498420c47f8c271.bindPopup(popup_a909d921fa5945d09c3cacadd02b0a2f)
+        ;
+
+        
+    
+    
+            var marker_f2274f3f75a84f9982f1bb70a205b0ca = L.marker(
+                [35.8699989, -106.5709991],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_279c6a236e6d4f4da9353a7ce8688e2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_f2274f3f75a84f9982f1bb70a205b0ca.setIcon(icon_279c6a236e6d4f4da9353a7ce8688e2f);
+        
+    
+        var popup_9504ae1832f74f87bff9333d29b6757a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd11abb82ef5450d8024e9c61ecbe285 = $(`<div id="html_bd11abb82ef5450d8024e9c61ecbe285" style="width: 100.0%; height: 100.0%;">Valles Caldera<br>US-New Mexico<br>Caldera</div>`)[0];
+            popup_9504ae1832f74f87bff9333d29b6757a.setContent(html_bd11abb82ef5450d8024e9c61ecbe285);
+        
+
+        marker_f2274f3f75a84f9982f1bb70a205b0ca.bindPopup(popup_9504ae1832f74f87bff9333d29b6757a)
+        ;
+
+        
+    
+    
+            var marker_5773d7a17ad5414aaa3cca2d5784fbe6 = L.marker(
+                [35.3699989, -111.5009995],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_e73dc9696b9543f59013fd41038c3165 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_5773d7a17ad5414aaa3cca2d5784fbe6.setIcon(icon_e73dc9696b9543f59013fd41038c3165);
+        
+    
+        var popup_14784507aea4402fb3f73e4aa1b70744 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_931d9879c179417eb98a1d747a88de57 = $(`<div id="html_931d9879c179417eb98a1d747a88de57" style="width: 100.0%; height: 100.0%;">Sunset Crater<br>US-Arizona<br>Cinder cone</div>`)[0];
+            popup_14784507aea4402fb3f73e4aa1b70744.setContent(html_931d9879c179417eb98a1d747a88de57);
+        
+
+        marker_5773d7a17ad5414aaa3cca2d5784fbe6.bindPopup(popup_14784507aea4402fb3f73e4aa1b70744)
+        ;
+
+        
+    
+    
+            var marker_f5d0b4c2d18f49859cad333302cefc36 = L.marker(
+                [34.5499992, -115.78099820000001],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_ca1a1e64f4214cfdbedec253dac79e7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f5d0b4c2d18f49859cad333302cefc36.setIcon(icon_ca1a1e64f4214cfdbedec253dac79e7b);
+        
+    
+        var popup_7209762f3acd47f58966579e9e58adbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e4752d5201a4ee283963abe85ab2311 = $(`<div id="html_0e4752d5201a4ee283963abe85ab2311" style="width: 100.0%; height: 100.0%;">Amboy<br>US-California<br>Cinder cone</div>`)[0];
+            popup_7209762f3acd47f58966579e9e58adbb.setContent(html_0e4752d5201a4ee283963abe85ab2311);
+        
+
+        marker_f5d0b4c2d18f49859cad333302cefc36.bindPopup(popup_7209762f3acd47f58966579e9e58adbb)
+        ;
+
+        
+    
+    
+            var marker_ac8057495e2e4a92b947066e6cab907c = L.marker(
+                [34.7999992, -108.0009995],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_945f22f8e7714f3286631f958c086da4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ac8057495e2e4a92b947066e6cab907c.setIcon(icon_945f22f8e7714f3286631f958c086da4);
+        
+    
+        var popup_4bc5feb5e1e2444792310ad52ff577c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f93ca1b823754ca5af1d648e5ed37a1f = $(`<div id="html_f93ca1b823754ca5af1d648e5ed37a1f" style="width: 100.0%; height: 100.0%;">Zuni-Bandera<br>US-New Mexico<br>Volcanic field</div>`)[0];
+            popup_4bc5feb5e1e2444792310ad52ff577c1.setContent(html_f93ca1b823754ca5af1d648e5ed37a1f);
+        
+
+        marker_ac8057495e2e4a92b947066e6cab907c.bindPopup(popup_4bc5feb5e1e2444792310ad52ff577c1)
+        ;
+
+        
+    
+    
+            var marker_49413db5c05e4a08ad04b9095cac6f51 = L.marker(
+                [33.7801018, -105.9309998],
+                {}
+            ).addTo(feature_group_5371b3e2810d4ed38eddb12ac27f4622);
+        
+    
+            var icon_3de2a6a9bd1f425d8af64957e8b8b187 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_49413db5c05e4a08ad04b9095cac6f51.setIcon(icon_3de2a6a9bd1f425d8af64957e8b8b187);
+        
+    
+        var popup_3a026e7da1b341b1a2dd328aae54bf91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c29c0eda6eb54191a070b0f8f943c7c5 = $(`<div id="html_c29c0eda6eb54191a070b0f8f943c7c5" style="width: 100.0%; height: 100.0%;">Carrizozo<br>US-New Mexico<br>Cinder cone</div>`)[0];
+            popup_3a026e7da1b341b1a2dd328aae54bf91.setContent(html_c29c0eda6eb54191a070b0f8f943c7c5);
+        
+
+        marker_49413db5c05e4a08ad04b9095cac6f51.bindPopup(popup_3a026e7da1b341b1a2dd328aae54bf91)
+        ;
+
+        
+    
+</script>
