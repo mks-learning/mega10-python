@@ -1,4 +1,5 @@
 import pandas
+import math
 import folium
 from colour import Color
 map = folium.Map(location=[37.4124, -122.1111], zoom_start=20, tiles='Stamen Terrain')
@@ -9,6 +10,7 @@ lon = list(data['LON'])
 name = list(data['NAME'])
 loc = list(data['LOCATION'])
 type = list(data['TYPE'])
+elev = list(data['ELEV'])
 w = Color('white')
 
 
@@ -33,8 +35,8 @@ def ucolor(type):
         return 'red'
 
 
-for lt, ln, nm, lc, tp in zip(lat, lon, name, loc, type):
-    fg.add_child(folium.Marker(location=[lt, ln], popup=str(nm + '<br>' + lc + '<br>' + tp), icon=folium.Icon(color=ucolor(tp), icon='fire')))
+for lt, ln, nm, lc, tp, e in zip(lat, lon, name, loc, type, elev):
+    fg.add_child(folium.Circle(location=[lt, ln], popup=str(nm + '<br>' + lc + '<br>' + tp), radius=e, color=ucolor(tp), fill_color=ucolor(tp), fill=True))
 
 map.add_child(fg)
-map.save('Map-Vol.html')
+map.save('Map-Vol-Circles.html')
