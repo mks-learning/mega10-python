@@ -36,7 +36,10 @@ def ucolor(type):
 
 
 for lt, ln, nm, lc, tp, e in zip(lat, lon, name, loc, type, elev):
+
     fg.add_child(folium.CircleMarker(location=[lt, ln], popup=str(nm + '<br>' + lc + '<br>' + tp), radius=math.ceil(e / 100), color=ucolor(tp), fill_color=ucolor(tp), opacity=(e % 10000)))
 
+fg.add_child(folium.GeoJson(data=(open('world.json', 'r', encoding='utf-8-sig').read())))
+
 map.add_child(fg)
-map.save('Map-Vol-Circles.html')
+map.save('Map-world.html')

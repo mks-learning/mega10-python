@@ -2,6 +2,12 @@ output of dir(folium)
 ['Choropleth', 'Circle', 'CircleMarker', 'ClickForMarker', 'ColorLine', 'ColorMap', 'CssLink', 'CustomIcon', 'Div', 'DivIcon', 'Element', 'FeatureGroup', 'Figure', 'FitBounds', 'GeoJson', 'GeoJsonPopup', 'GeoJsonTooltip', 'Html', 'IFrame', 'Icon', 'JavascriptLink', 'LatLngPopup', 'LayerControl', 'LinearColormap', 'Link', 'MacroElement', 'Map', 'Marker', 'PolyLine', 'Polygon', 'Popup', 'Rectangle', 'RegularPolygonMarker', 'StepColormap', 'TileLayer', 'Tooltip', 'TopoJson', 'Vega', 'VegaLite', 'WmsTileLayer', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', '_version', 'branca', 'features', 'folium', 'map',
  'raster_layers', 'sys', 'utilities', 'vector_layers']
 
+output of dir(folium.CircleMarker):
+[ 'add_child', 'add_children', 'add_to', 'get_bounds', 'get_name', 'get_root', 'render', 'save', 'to_dict', 'to_json']
+
+output of dir(folium.Choropleth):
+[...'add_child', 'add_children', 'add_to', 'get_bounds','get_name', 'get_root', 'render', 'save', 'to_dict', 'to_json']
+
 Print output of color:
  {'green', 'darkpurple', 'darkred', 'gray', 'lightgreen', 'blue', 'lightblue', 'purple', 'darkblue', 'lightred', 'beige', 'pink', 'cadetblue', 'white', 'red', 'lightgray', 'darkgreen', 'orange', 'black'}
 
