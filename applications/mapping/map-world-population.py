@@ -1,45 +1,32 @@
-# import pandas
-# import math
 import folium
-from colour import Color
-map = folium.Map(location=[37.4124, -122.1111], zoom_start=10, tiles='Stamen Terrain')
+map = folium.Map(location=[37, -122], zoom_start=10, tiles='Stamen Terrain')
 fg = folium.FeatureGroup(name='My Map')
-data = open('world.json', 'r', encoding='utf-8-sig').read()
-lat = list(data['LAT'])
-lon = list(data['LON'])
-name = list(data['NAME'])
-loc = list(data['LOCATION'])
-type = list(data['TYPE'])
-elev = list(data['ELEV'])
-w = Color('white')
+datum = open('world.json', 'r', encoding='utf-8-sig').read()
 
 
-def ucolor(type):
-    if type == 'Caldera':
+def popu(pop):
+    if pop <= 10000000:
         return 'cadetblue'
-    elif type == 'Cinder cone':
+    elif pop <= 15000000:
         return 'darkblue'
-    elif type == 'Complex volcano':
+    elif pop <= 25000000:
         return 'purple'
-    elif type == 'Fissue vents':
+    elif pop <= 50000000:
         return 'blue'
-    elif type == 'Shield volcano':
+    elif pop <= 75000000:
         return 'pink'
-    elif type == 'Maar':
+    elif pop <= 100000000:
         return 'black'
-    elif type == 'Stratovolcano':
+    elif pop <= 250000000:
         return 'green'
-    elif type == 'Volcanic field':
+    elif pop <= 750000000:
         return 'orange'
     else:
         return 'red'
 
 
-# for lt, ln, nm, lc, tp, e in zip(lat, lon, name, loc, type, elev):
-#
-#     fg.add_child(folium.CircleMarker(location=[lt, ln], popup=str(nm + '<br>' + lc + '<br>' + tp), radius=math.ceil(e / 100), color=ucolor(tp), fill_color=ucolor(tp), opacity=(e % 10000)))
+fg.add_child(folium.GeoJson(data=datum, style_function=lambda x: {'fillColor': popu(x['properties']['POP2005'])}))
 
-fg.add_child(folium.GeoJson(data=data, style_function=lambda x: {'fillColor': 'purple'}))
 
 map.add_child(fg)
 map.save('Map-world.html')
