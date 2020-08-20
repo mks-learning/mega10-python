@@ -14,7 +14,7 @@ def home():
 @app.route('/about/')
 # the route('/') is referring to the page within the website. So '/' means
 # root. And '/about/' would be root/about
-def contact():
+def about():
     return render_template('about.html')
 
 
