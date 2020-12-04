@@ -1,7 +1,9 @@
 import folium
 map = folium.Map(location=[37, -122], zoom_start=10, tiles='Stamen Terrain')
 fg = folium.FeatureGroup(name='My Map')
-datum = open('world.json', 'r', encoding='utf-8-sig').read()
+
+datum = open('/Users/mukund/Desktop/PythonClass/class/MegaPython/applications/mapping/world.json',
+             'r', encoding='utf-8-sig').read()
 
 
 def popu(pop):
@@ -29,4 +31,4 @@ fg.add_child(folium.GeoJson(data=datum, style_function=lambda x: {'fillColor': p
 
 
 map.add_child(fg)
-map.save('Map-world.html')
+map.save(f'/Users/mukund/Desktop/PythonClass/class/MegaPython/applications/mapping/Map-world-dec.html')
