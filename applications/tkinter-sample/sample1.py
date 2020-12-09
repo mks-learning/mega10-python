@@ -16,7 +16,7 @@ def km_to_miles():
 
 # below is definging a button and then the command statement is stating "when pressed execute
 #  this function" (which needs to have been defined in the lines prior to this button instantiation)
-b1 = Button(mywindow, text = "Press Me, again", command=km_to_miles)
+b1 = Button(mywindow, text = "Convert from kilograms", command=km_to_miles)
 b1.grid(row=0, column=0)
 
 e1_value=StringVar()
