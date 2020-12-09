@@ -6,17 +6,17 @@ mywindow = Tk()
 
 # this function is what will be executed when the button in the UI is pressed. The input will be
 # converted from the input of KM to an output of MI
-def km_to_miles():
+def miles_to_km():
 #    miles = k * 1.62
 #   return miles
 # since e1_value is defined as a StringVar() (rem this is a function statement) you need to use
 # get() to signify get the value of the string variable e1_value.
-    miles = float(e1_value.get()) * 1.62
-    t1.insert(END, miles)
+    km = float(e1_value.get()) * 1.62
+    t1.insert(END, km)
 
 # below is definging a button and then the command statement is stating "when pressed execute
 #  this function" (which needs to have been defined in the lines prior to this button instantiation)
-b1 = Button(mywindow, text = "Convert from kilograms", command=km_to_miles)
+b1 = Button(mywindow, text = "Enter Miles to get Kilometers", command=miles_to_km)
 b1.grid(row=0, column=0)
 
 e1_value=StringVar()
