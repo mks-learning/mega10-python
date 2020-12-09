@@ -8,6 +8,7 @@ conwindow=Tk(screenName="Conversion Tool")
 # these function is what will be executed when the button in the UI is pressed. The input will be
 # converted from the input of Kg to an output of g, lbs, ozs
 def convert_input():
+    clear_entry()
     con_grams = float(input_value.get()) * 1000
     # 1000 grams in a kilogram
     tg.insert(END,con_grams)
@@ -20,6 +21,10 @@ def convert_input():
     # 16 oz per pound and 2.20462 pounds per kg
     tpo.insert(END,con_ounces)
 
+def clear_entry():
+    tg.delete(1.0,END)
+    tp.delete(1.0,END)
+    tpo.delete(1.0,END)
 
 # below is definging a button and then the command statement is stating "when pressed execute
 #  this function" (which needs to have been defined in the lines prior to this button instantiation)
