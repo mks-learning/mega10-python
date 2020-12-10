@@ -6,39 +6,26 @@ import pandas as pd
 
 foo = pd.read_csv('Day2-input.csv', delim_whitespace=True)
 bar = [list(row) for row in foo.values]
+rowNum, trueCount, i = 0, 0, 0
+while rowNum < len(bar):
+    # tempcount, tempchar, tempstring are the elements for this item of the list
+    tempcount = bar[rowNum][0]
+    temptest = bar[rowNum][1]
+    tempassword = bar[rowNum][2]
+    rule = tempcount.split('-')
+    temptest = temptest.split(':')
+    low = rule[0]
+    high= rule[1]
+    str_test = tempassword.count(str(temptest[0]))
+    str_test_low = (temptest[0] == tempassword[int(low)-1])
+    str_test_high = ((temptest[0] == tempassword[int(high)-1]))
 
+    if (int(low) <= int(str_test) <= int(high)):
+        i += 1
+    #rowNum += 1
 
-i=0
-while i < len(bar):
-    pwdLow, pwdHi = map(list, zip(*[s.split('-') for s in bar]))
-    print(bar[i], pwdLow[i], pwdHi[i])
-    i += 1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# bar = [list(row) for row in foo.values]
-# ruleLow = [row[0] for row in bar]
-# ruleHigh = [row[0] for row in bar]
-# key = [row[1] for row in bar]
-# test = [row[2] for row in bar]
-
-
-
-# print(ruleLow)
-# print(ruleHigh)
-# print(key)
-# print(test)
-
-
+  
+    if (int(low) <= int(str_test) <= int(high)) and str_test_low and str_test_high:
+        trueCount += 1
+    rowNum += 1
+print("The final answer to the question 1 is "+str(i)+" and the final answer to question 2 is "+str(trueCount)+".")
