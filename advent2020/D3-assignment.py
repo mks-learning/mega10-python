@@ -7,19 +7,42 @@ import pandas as pd
 # The second test is the position of the test string in the password. Commented text
 # in the body of the code is the first test
 
-foo = pd.read_csv('D3-input.csv')
-bar = [list(row) for row in foo.values]
-rowtotal = len(bar)
-x, y, xloc, space, tree = 0, 0, "", 0, 0
-while y < rowtotal:
-    while x < rowtotal:
-        rowcontent = bar[y]
-        xloc = rowcontent[x]
-        if xloc == '.':
+mountain = pd.read_csv('D3-input.csv')
+terrain = [list(row) for row in mountain.values]
+currentItem, rowwidth, repeated, x, y, item, space, tree = "", 0, 0, 0, 0, 0, 0, 0
+newrow, currentrow, extraelements = [], [], []
+# CONSTANTS
+# how long is the mountain?
+totalrows = len(mountain)
+# how wide is the mountain?
+rowwidth = int([len(i) for i in terrain[y]][0])
+# how many whole times does the mountain repeat?
+repeated = int(totalrows / rowwidth)
+# how much extra needs to be added
+extra_bit = totalrows % rowwidth
+
+def extendRow(currentrow):
+# This function takes the constants and specific row elements and makes it as wide as it is long
+    counter, temprow = 0, []
+    temprow = currentrow[0]
+    extraelements = [list(row) for row in currentrow[0]]
+    while counter != repeated:
+        temprow = temprow + str(currentrow[0])
+        counter +=1
+    temprow[0] = temprow[0] + extraelements[0:extra_bit]
+    return temprow
+
+
+while y < totalrows:
+    currentrow = terrain[y]
+    newrow = extendRow(currentrow)
+    currentItem = str(newrow[x])
+    while x < totalrows:
+        if currentrow[x] == '.':
             space += 1
         else:
             tree += 1
-        x = x + 3
+    x = x + 3
     y += 1
 
 
