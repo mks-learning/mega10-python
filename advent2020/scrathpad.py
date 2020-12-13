@@ -26,11 +26,11 @@ def extendRow(currentrow):
     counter, temprow, tempbits = 0, [], []
     temprow = currentrow[0]
     extrabits = [list(row) for row in currentrow[0]]
-    tempbits = etrabits[0:extra_bit]
+    tempbits = extrabits[0:extra_bit]
     # trying to make the extrabits froma list of lists to a single string
     while counter != extra_bit:
         tempbits = tempbits + str(extrabits[counter])
-        countr +=1
+        counter +=1
     counter = 0
     while counter != repeated:
         temprow = temprow + str(currentrow[0])
@@ -53,7 +53,7 @@ while y < totalrows:
 
 
 
-print(str(rowtotal)+" and each row is this wide -> "+str(width))
+print(str(totalrows)+" and each row is this wide -> "+str(rowwidth))
 
 
 '...##.....##..#..#....#.##.##.#...##.....##..#..#....#.##.##.#...##.....##..#..#....#.##.##.#...##.....##..#..#....#.##.##.#...##.....##..#..#....#.##.##.#...##.....##..#..#....#.##.##.#...##.....##..#..#....#.##.##.#...##.....##..#..#....#.##.##.#...##.....##..#..#....#.##.##.#...##.....##..#..#....#.##.##.#...##.....##..#..#....#.##.##.#...##.....##'

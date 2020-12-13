@@ -10,7 +10,7 @@ import pandas as pd
 mountain = pd.read_csv('D3-input.csv')
 terrain = [list(row) for row in mountain.values]
 currentItem, rowwidth, repeated, x, y, item, space, tree = "", 0, 0, 0, 0, 0, 0, 0
-newrow, currentrow, extrabits = [], [], []
+newrow, currentrow, temprow, extrabits = [], [], [], []
 # CONSTANTS
 # how long is the mountain?
 totalrows = len(mountain)
@@ -21,30 +21,30 @@ repeated = int(totalrows / rowwidth)
 # how much extra needs to be added
 extra_bit = totalrows % rowwidth
 
-def extendRow(currentrow):
-    # This function takes the constants and specific row elements and makes it as wide as it is long
-    counter, temprow = 0, []
-    temprow = currentrow[0]
-    extrabits = temprow[0:extra_bit]
+
+def growRow(temprow, extrabits):
+    counter = 0
     while counter != repeated:
         temprow = temprow + str(currentrow[0])
-        counter +=1
+    counter +=1
     temprow = temprow + extrabits
     return temprow
 
+
 while y < totalrows:
     currentrow = terrain[y]
-    newrow = extendRow(currentrow)
-    currentItem = str(newrow[x])
-    while x < totalrows:
-        if currentItem == '.':
-            space += 1
-            break
-        else:
-            tree += 1
-            break
+    temprow = currentrow[0]
+    extrabits = temprow[0:extra_bit]
+    newrow = growRow(temprow, extrabits)
+    currentItem = newrow[x]        
+    if currentItem == '.':
+        space += 1
+        break
+    else:
+        tree += 1
+        break    
     x = x + 3
     y += 1
 
 print(str(totalrows)+" and each row is this wide -> "+str(rowwidth)+'. You would encounter ' +
-       tree + 'in your journey down the mountain.' )
+       str(tree) + 'in your journey down the mountain.' )
