@@ -22,20 +22,20 @@ repeated = int(totalrows / rowwidth)
 extra_bit = totalrows % rowwidth
 
 
-def growRow(temprow, extrabits):
-    counter = 0
-    while counter != repeated:
-        temprow = temprow + str(currentrow[0])
-    counter +=1
-    temprow = temprow + extrabits
-    return temprow
+# def growRow(temprow, extrabits):
+#     counter = 0
+#     while counter != repeated:
+#         temprow = temprow + str(currentrow[0])
+#     counter +=1
+#     temprow = temprow + extrabits
+#     return temprow
 
 
 while y < totalrows:
     currentrow = terrain[y]
-    temprow = currentrow[0]
-    extrabits = temprow[0:extra_bit]
-    newrow = growRow(temprow, extrabits)
+    # temprow = currentrow[0]
+    # extrabits = temprow[0:extra_bit]
+    # newrow = growRow(temprow, extrabits)
     currentItem = newrow[x]        
     if currentItem == '.':
         space += 1
