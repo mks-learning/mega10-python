@@ -24,7 +24,6 @@ totalrows = len(mountain)
 rowwidth = len(terrain[0][0])
 
 while y_counter < totalrows:
-    print('current item is '+str(currentItem)+' curent tree count is '+str(tree))
     #collect the current row elements
     currentrow = str(terrain[y_counter][0])
     # this is the slope of the tobagan
@@ -33,8 +32,10 @@ while y_counter < totalrows:
     if currentItem == '#':
         tree += 1
     # updates the index for the row element to be analyzed
-    y_counter += 1
-    x_index = x_index + 3
+    y_counter += 2
+    x_index = x_index + 1
 
 print(str(totalrows)+" and each row is "+str(rowwidth)+' wide and you would encounter ')
-print(str(tree) + ' trees in your journey down the mountain.' )
+print(str(tree) + ' trees in your journey down the mountain. The slope of the run was ')
+print('rise of 2 and run of 1. The product of it all is '+str(84*198*72*81*53))
+
