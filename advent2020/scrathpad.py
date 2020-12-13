@@ -22,15 +22,22 @@ repeated = int(totalrows / rowwidth)
 extra_bit = totalrows % rowwidth
 
 def extendRow(currentrow):
-    # This function takes the constants and specific row elements and makes it as wide as it is long
+# This function takes the constants and specific row elements and makes it as wide as it is long
     counter, temprow, tempbits = 0, [], []
     temprow = currentrow[0]
-    extrabits = temprow[0:extra_bit]
+    extrabits = [list(row) for row in currentrow[0]]
+    tempbits = etrabits[0:extra_bit]
+    # trying to make the extrabits froma list of lists to a single string
+    while counter != extra_bit:
+        tempbits = tempbits + str(extrabits[counter])
+        countr +=1
+    counter = 0
     while counter != repeated:
         temprow = temprow + str(currentrow[0])
         counter +=1
     temprow = temprow + str(tempbits[0:extra_bit])
     return temprow
+ 
 
 while y < totalrows:
     currentrow = terrain[y]
