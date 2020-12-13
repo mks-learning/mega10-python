@@ -23,13 +23,13 @@ extra_bit = totalrows % rowwidth
 
 def extendRow(currentrow):
     # This function takes the constants and specific row elements and makes it as wide as it is long
-    counter, temprow, tempbits = 0, [], []
+    counter, temprow = 0, []
     temprow = currentrow[0]
     extrabits = temprow[0:extra_bit]
     while counter != repeated:
         temprow = temprow + str(currentrow[0])
         counter +=1
-    temprow = temprow + str(tempbits[0:extra_bit])
+    temprow = temprow + extrabits
     return temprow
 
 while y < totalrows:
@@ -37,13 +37,14 @@ while y < totalrows:
     newrow = extendRow(currentrow)
     currentItem = str(newrow[x])
     while x < totalrows:
-        if currentrow[x] == '.':
+        if currentItem == '.':
             space += 1
+            break
         else:
             tree += 1
+            break
     x = x + 3
     y += 1
 
-
-
-print(str(rowtotal)+" and each row is this wide -> "+str(width))
+print(str(totalrows)+" and each row is this wide -> "+str(rowwidth)+'. You would encounter ' +
+       tree + 'in your journey down the mountain.' )
