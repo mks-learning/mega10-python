@@ -4,6 +4,12 @@ from tkinter import *
 # use Tk() function to create the window of the UI (for on prem applications) and use Tk() to 
 mywindow = Tk()
 
+# this is a clear the results field before posting the results.
+def clear_entry():
+    t1.delete('1.0','end')
+    return
+
+
 # this function is what will be executed when the button in the UI is pressed. The input will be
 # converted from the input of KM to an output of MI
 def miles_to_km():
@@ -12,6 +18,7 @@ def miles_to_km():
 # since e1_value is defined as a StringVar() (rem this is a function statement) you need to use
 # get() to signify get the value of the string variable e1_value.
     km = float(e1_value.get()) * 1.62
+    clear_entry()
     t1.insert(END, km)
 
 # below is definging a button and then the command statement is stating "when pressed execute

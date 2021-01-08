@@ -1,0 +1,77 @@
+# packages in environment at /Users/mukund/opt/anaconda3/envs/tutorial:
+#
+# Name                    Version                   Build  Channel
+astroid                   2.4.2                    py38_0    anaconda
+attrs                     20.2.0                     py_0    anaconda
+brotlipy                  0.7.0           py38haf1e3a3_1000    anaconda
+ca-certificates           2020.10.14                    0    anaconda
+certifi                   2020.6.20                py38_0    anaconda
+cffi                      1.14.3           py38hed5b41f_0    anaconda
+chardet                   3.0.4                 py38_1003    anaconda
+click                     7.1.2                      py_0    anaconda
+cryptography              3.1.1            py38hddc9c9b_0    anaconda
+expat                     2.2.10               hb1e8313_2    anaconda
+flake8                    3.8.4                      py_0    conda-forge
+flask                     1.1.2                      py_0    anaconda
+git                       2.23.0          pl526h6951d83_0    anaconda
+idna                      2.10                       py_0    anaconda
+importlib-metadata        3.3.0            py38h50d1736_2    conda-forge
+iniconfig                 1.1.1                      py_0    anaconda
+isort                     5.6.4                      py_0    anaconda
+itsdangerous              1.1.0                      py_0    anaconda
+jinja2                    2.11.2                     py_0    anaconda
+krb5                      1.18.2               h75d18d8_0    anaconda
+lazy-object-proxy         1.4.3            py38h1de35cc_0    anaconda
+libblas                   3.9.0                3_openblas    conda-forge
+libcblas                  3.9.0                3_openblas    conda-forge
+libcurl                   7.71.1               h8a08a2b_1    anaconda
+libcxx                    10.0.0                        1  
+libedit                   3.1.20191231         h1de35cc_1  
+libffi                    3.3                  hb1e8313_2  
+libgfortran               5.0.0               h6c81a4c_15    conda-forge
+libgfortran5              9.3.0               h6c81a4c_15    conda-forge
+libiconv                  1.16                 h1de35cc_0    anaconda
+liblapack                 3.9.0                3_openblas    conda-forge
+libopenblas               0.3.12          openmp_h54245bb_1    conda-forge
+libssh2                   1.9.0                ha12b0ac_1    anaconda
+llvm-openmp               11.0.0               h73239a0_1    conda-forge
+markupsafe                1.1.1            py38h1de35cc_1    anaconda
+mccabe                    0.6.1                      py_1    conda-forge
+more-itertools            8.5.0                      py_0    anaconda
+ncurses                   6.2                  h0a44026_1  
+nltk                      3.4.4                      py_0    conda-forge
+numpy                     1.19.4           py38h6ced74f_2    conda-forge
+openssl                   1.1.1h               haf1e3a3_0    anaconda
+packaging                 20.4                       py_0    anaconda
+pandas                    1.0.1            py38h4f17bb1_0    conda-forge
+pcre                      8.44                 hb1e8313_0    anaconda
+perl                      5.26.2               h4e221da_0    anaconda
+pip                       20.3.3           py38hecd8cb5_0  
+pluggy                    0.13.1                   py38_0    anaconda
+py                        1.9.0                      py_0    anaconda
+pycodestyle               2.6.0              pyh9f0ad1d_0    conda-forge
+pycparser                 2.20                       py_2    anaconda
+pyflakes                  2.2.0              pyh9f0ad1d_0    conda-forge
+pylint                    2.6.0                    py38_0    anaconda
+pyopenssl                 19.1.0                     py_1    anaconda
+pyparsing                 2.4.7                      py_0    anaconda
+pysocks                   1.7.1                    py38_1    anaconda
+pytest                    6.1.1                    py38_0    anaconda
+python                    3.8.5                h26836e1_1  
+python-dateutil           2.8.1                      py_0    conda-forge
+python_abi                3.8                      1_cp38    conda-forge
+pytz                      2020.4             pyhd8ed1ab_0    conda-forge
+readline                  8.0                  h1de35cc_0  
+requests                  2.24.0                     py_0    anaconda
+setuptools                51.0.0           py38hecd8cb5_2  
+six                       1.15.0                     py_0    anaconda
+sqlite                    3.33.0               hffcf06c_0  
+tk                        8.6.10               hb0a8c7a_0  
+toml                      0.10.1                     py_0    anaconda
+urllib3                   1.25.11                    py_0    anaconda
+werkzeug                  1.0.1                      py_0    anaconda
+wheel                     0.36.2             pyhd3eb1b0_0  
+wrapt                     1.11.2           py38h1de35cc_0    anaconda
+xz                        5.2.5                h1de35cc_0  
+zipp                      3.4.0                      py_0    conda-forge
+zlib                      1.2.11               h1de35cc_3  
