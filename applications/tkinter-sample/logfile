@@ -1,0 +1,4 @@
+2021-01-07 19:19:39.021 PST [28108] FATAL:  data directory "/Users/mukund/Desktop/PythonClass/class/mega10-python/applications/tkinter-sample/mylocal_db" has invalid permissions
+2021-01-07 19:19:39.021 PST [28108] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
+2021-01-07 19:37:15.022 PST [29235] FATAL:  data directory "/Users/mukund/Desktop/PythonClass/class/mega10-python/applications/tkinter-sample/mylocal_db" has invalid permissions
+2021-01-07 19:37:15.022 PST [29235] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).
